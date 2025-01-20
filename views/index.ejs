@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo App</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+   <div>
+    <h1 class="title">Italian Cheeseaholic</h1>
+</div>
+    <div class="image-grid">
+
+        <% blogs.forEach(post => { %>
+            <a href="/<%=`${post.slug}`%>"> <img src="https://apb-articlepics.s3.eu-north-1.amazonaws.com/<%=`${post.image}`%>" alt="pic"></a>
+          
+        <% }) %>
+   </div>
+
+</body>
+</html>
